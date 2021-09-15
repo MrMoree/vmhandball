@@ -1,0 +1,17 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "Entrega Proyecto Final - Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/Maestro.scss css/nuevoCss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Mariano Morellato",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
