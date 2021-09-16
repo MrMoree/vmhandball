@@ -333,7 +333,7 @@
 
 #imgA {
   grid-area: imgA;
-  background-image: url(../media/Inferiores_A.JPG);
+  background-image: url(../media/Inferiores_A.jpg);
   background-position: center;
   background-size: cover; }
 
