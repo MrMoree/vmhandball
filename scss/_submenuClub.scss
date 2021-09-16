@@ -1,0 +1,159 @@
+/* ====================== MAIN GALERIAS ====================== */
+
+#galerias{
+    margin: 5% 0% 5% 0%;
+        h1{margin: 2% 0% 4% 0%;}
+        h2{margin-bottom: 1%; text-align: center; font-weight: bold;}
+}
+
+#galeriaPrimera{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px 10px;
+    justify-content: center;
+    overflow: hidden;
+    grid-template-areas:
+    "img1 img1 img2 img5"
+    "img1 img1 img4 img3";
+        div:hover {transform: scale(1.3);}
+}
+
+#img1{grid-area: img1; background-image: url(../media/Primera_01.jpg); background-position: center; background-size: cover;}
+#img2{grid-area: img2; background-image: url(../media/Primera_02.jpg); background-position: center; background-size: cover;}
+#img3{grid-area: img3; background-image: url(../media/Primera_03.jpg); background-position: center; background-size: cover;}
+#img4{grid-area: img4; background-image: url(../media/Primera_04.jpg); background-position: center; background-size: cover;}
+#img5{grid-area: img5; background-image: url(../media/Primera_05.jpg); background-position: center; background-size: cover;}
+
+
+#galeriaInferiores{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px 10px;
+    justify-content: center;
+    overflow: hidden;
+    grid-template-areas:
+    "imgC imgD imgA imgA"
+    "imgB imgE imgA imgA";
+        div:hover {transform: scale(1.3);}
+}
+
+#imgA{grid-area: imgA; background-image: url(../media/Inferiores_A.JPG); background-position: center; background-size: cover;}
+#imgB{grid-area: imgB; background-image: url(../media/Inferiores_B.JPG); background-position: center; background-size: cover;}
+#imgC{grid-area: imgC; background-image: url(../media/Inferiores_C.JPG); background-position: center; background-size: cover;}
+#imgD{grid-area: imgD; background-image: url(../media/Inferiores_D.JPG); background-position: center; background-size: cover;}
+#imgE{grid-area: imgE; background-image: url(../media/Inferiores_E.JPG); background-position: center; background-size: cover;}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px) /* MEDIAQ PARA CELULAR */ 
+{
+    #galerias{
+        h1{margin: 10% 0% 10% 0%;}
+    }
+    #galeriaPrimera{
+        margin-bottom: 20%; margin-top: 5%;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";}
+        
+    #galeriaInferiores{
+        margin-bottom: 10%; margin-top: 5%;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas:
+        "imgA"
+        "imgB"
+        "imgC"
+        "imgD"
+        "imgE";}
+        }
+        
+    @media only screen and (min-width: 768px) and (max-width: 1250px) /* MEDIAQ PARA TABLET */ 
+    {
+        #galerias{
+            h1{margin: 2% 0% 6% 0%;}
+        }
+        #galeriaPrimera{
+            margin-bottom: 10%; margin-top: 3%;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(3, 300px);
+            grid-template-areas:
+            "img1 img1"
+            "img2 img3"
+            "img4 img5";}
+                
+        #galeriaInferiores{
+            margin-bottom: 10%; margin-top: 3%;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(3, 300px);
+            grid-template-areas:
+            "imgA imgA"
+            "imgB imgC"
+            "imgD imgE";
+            }
+        }
+
+/* ====================== SPONSORS ====================== */
+
+#sponsors{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 0px 80px;
+    justify-content: center;
+    margin: 5% 0% 5% 0%;
+    overflow: hidden;
+    grid-template-areas:
+    "presentacion presentacion presentacion presentacion"
+    "sponsor1 sponsor1 sponsor2 sponsor3"
+    "sponsor1 sponsor1 sponsor4 sponsor5"
+}
+
+#presentacion{grid-area: presentacion; text-align: center;}
+#sponsor1{grid-area: sponsor1; background-image: url(../media/logo_vanova.png); background-position: center; background-size: 100%; background-repeat:no-repeat;}
+#sponsor2{grid-area: sponsor2; background-image: url(../media/logo_ruiz.png); background-position: center; background-size: 100%; background-repeat:no-repeat;}
+#sponsor3{grid-area: sponsor3; background-image: url(../media/logo_carra.png); background-position: center; background-size: 100%; background-repeat:no-repeat;}
+#sponsor4{grid-area: sponsor4; background-image: url(../media/logo_pn.png); background-position: center; background-size: 100%; background-repeat:no-repeat;}
+#sponsor5{grid-area: sponsor5; background-image: url(../media/logo_bayer.png); background-position: center; background-size: 100%; background-repeat:no-repeat;}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px) /* MEDIAQ PARA CELULAR */ 
+{
+    #sponsors{
+        margin-top: 15%; margin-bottom: 15%;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(6, 100px);
+        grid-template-areas:
+        "presentacion presentacion"
+        "presentacion presentacion"
+        "presentacion presentacion"
+        "sponsor1 sponsor1"
+        "sponsor2 sponsor3"
+        "sponsor4 sponsor5";}
+    #presentacion{
+        h2{margin-bottom: 4%;}
+    } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) /* MEDIAQ PARA ESCRITORIO */ 
+{
+    #sponsors{
+        margin-top: 5%; margin-bottom: 5%;
+        grid-template-columns: repeat(3 , 100px);
+        grid-template-rows: repeat(4, 100px);
+        grid-template-areas:
+        "presentacion presentacion presentacion"
+        "presentacion presentacion presentacion"
+        "sponsor1 sponsor1 sponsor2"
+        "sponsor3 sponsor4 sponsor5";}
+    #presentacion{
+        p{margin-bottom: 4%;}
+    }  
+}

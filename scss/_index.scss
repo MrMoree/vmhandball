@@ -1,0 +1,115 @@
+#tituloMayor{animation-duration: 2s; animation-name: buenas;} /* ANIMACIÓN INDEX HEADER */ 
+@keyframes buenas
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+/* ====================== MAIN INDEX ====================== */
+
+.carril{width: 100%; margin-bottom: 4%;}
+#introMain{
+    text-align: center;
+        h2{margin:5%; font-weight: normal;}
+        h3{margin-bottom: 10%;}
+}
+
+.listaRandom{
+    padding-left: 0;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#inicioColumnas{
+    margin: 5% 0% 5% 0%;
+    padding: 3%;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+        h2{margin-bottom: 5%;}
+        p{margin: 2% 0% 5% 0%;}
+}
+
+.divIzquierda{
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+        h3{margin-top: 10%;}
+}
+
+
+.divDerecha{
+    margin: 10% 5% 0% 5%;
+    width: 90%;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: darkorange 4px solid;
+            text-align: center;
+                tr{
+                    th{
+                        color: darkred;
+                        font-weight: bold;
+                        border: black 1px solid;
+                    }
+                    td{border: black 1px solid; padding: 2%} 
+                }
+        }
+}
+
+.cajaRedes{margin-bottom: -3%;}
+.cajitaRedes{margin-top: -15%; margin-bottom: -10%;}
+.logoRedes{width: 12%; margin-right: 3%;}
+.tituloRedes{margin-top: 3%; text-decoration: none; color: black;}
+.centrarRedes{justify-content: center; padding: 3%;}
+
+@media only screen and (min-width:768px) /* MEDIAQ PARA TABLET */ 
+{
+    #introMain{
+        h2{margin:2%;}
+        h3{margin-bottom: 2%;}
+    }
+    #inicioColumnas{
+        h2{margin-bottom: 3%;}
+        p{margin: 2% 0% 2% 0%;}
+    }
+    .divDerecha{
+        margin: 5% 5% 0% 5%;
+        width: 70%;
+            table{margin-top: 5%;}
+    }
+    .divIzquierda h3{margin-top: 5%;}
+    .cajitaRedes{width: 100%; margin: -10% 0% 0% 0%;}
+    .centrarRedes{width: 50%;}
+}
+
+@media only screen and (min-width:1200px) /* MEDIAQ PARA ESCRITORIO */ 
+{
+    .carril{width: 60%; margin-bottom: 2%;}
+    #introMain h2{margin:1%;}
+    
+    #inicioColumnas{
+        margin: 3% 0% 3% 0%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+            p{margin: 0% 0% 1% 0%;}
+            h2{margin: 0% 0% 1% 0%;}
+            h3{margin-top: 3%; margin-bottom: 1%;}
+    }
+    .divIzquierda{
+        width: 50%;
+        margin: 0% 2% 0% 2%;
+    }
+    .divDerecha{
+        width: 20%;
+        margin: 0% 2% 0% 2%;
+            table{margin-top: 5%;}
+    }    
+    .cajaRedes{margin-top: -1%; margin-bottom: 0%;}
+    .cajitaRedes{margin-top: -3%; margin-bottom: 0%; width: 100%;}
+    .logoRedes{width: 10%; margin-right: 4%;}
+    .tituloRedes{margin-top: 2%;}
+    .centrarRedes{padding: 0%; width: 25%;}
+}

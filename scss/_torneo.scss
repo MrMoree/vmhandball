@@ -1,0 +1,106 @@
+/* ====================== Torneo ====================== */
+
+.seleccionCat{
+    text-align: center;
+        th{padding: 10px;}
+        td{padding: 10px;}
+        h1{margin: 2% 0% 2% 0%;}
+} 
+
+.categorias{
+    font-size: 22px;
+    margin-bottom: 1%;
+}
+.categoriasFem{
+    background-color: darkorange;
+}
+.categoriasMasc{
+    background-color:lightgray;
+}
+#espacioBoton{
+    button{margin: 1%; padding: 0.5%;}
+}
+
+#tablaMasPartidos{
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 0% 3% 0%;
+}
+
+#tablaPosiciones{
+    display: inline-block;
+    width: 45%;
+    margin: 0% 0% 0% 4%;
+        table{
+            margin: 2% 0% 2% 0%;
+            border: 3px darkorange solid;
+        }
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: darkorange;
+    color: white;
+}
+
+#partidos{
+    display: inline-block;
+    width: 30%;
+    margin-right: 4%;
+}
+.jornada{margin-top: 5%;}
+.fecha{margin-bottom: 0px; font-style: italic; color: darkred; font-weight: bold;}
+.clubes{display: inline-block;margin-top: 0;}
+.resultado{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+.espacioPag{margin-top: 2%;}
+.botonColor{color: orange; font-weight: bold;}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px) /* MEDIAQ PARA CELULAR */ 
+{
+    .seleccionCat{
+        h1{margin: 10% 0% 5% 0%;}
+    }
+    .categorias{margin-bottom: 5%;}
+    #tablaMasPartidos{
+        flex-direction: column;
+        text-align: center;
+            h2 {text-align: center;}
+    }
+    #tablaPosiciones{
+        width: 100%;
+        margin: 10% 0% 0% 0%;
+        padding: 5%;
+            .table{
+                display: block !important;
+                overflow-x: auto !important;
+                width: 100% !important;
+                margin-bottom: 8%;
+            }
+    }
+    #partidos{width: 100%; margin-top: 10%;}
+    .fecha{margin-bottom: 3%; font-size: 13px;}
+    .resultado{display: block; margin: -2% 0% 1% 0%;}
+    .espacioPag{justify-content: center;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) /* MEDIAQ PARA ESCRITORIO */ 
+{
+    .seleccionCat{
+        h1{margin: 7% 0% 3% 0%;}
+    }
+    .categorias{margin-bottom: 3%;}
+    #tablaMasPartidos{
+        flex-direction: column;
+        text-align: center;
+            h2 {text-align: center;}
+    }
+    #tablaPosiciones{width: 100%; margin: 3% 0% 0% 0%; padding: 3%;}
+    #partidos{width: 100%; margin-top: 3%;}
+    .fecha{margin-bottom: 3%; font-size: 13px;}
+    .espacioPag{justify-content: center;}
+}

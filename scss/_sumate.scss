@@ -1,0 +1,44 @@
+/* ====================== Sumate ====================== */
+
+#sumate{
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+    h1{text-align: left; margin-bottom: 5%;}
+}
+
+#formAncho{width: 85%;}
+#cajaFormMargen{padding-left: 8%; margin-bottom: 8%;}
+#enviarMargen{margin-bottom: 4%;}
+
+/* ESCONDER FLECHAS FORM NUMBER --- Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media only screen and (min-width:767px) /* MEDIAQ PARA TABLETA */ 
+{
+    #formAncho{width: 75%; justify-content: center;}
+    #enviarMargen{margin-bottom: 0%;}
+    #cajaFormMargen{margin-bottom: 4%;}
+}
+
+@media only screen and (min-width:1200px) /* MEDIAQ PARA ESCRITORIO */ 
+{
+    #sumate{
+        margin: 4%;
+        h1{margin-bottom: 2%;}
+        fieldset {margin-top: 2%;}
+        legend{margin-bottom: 1%;}
+    }    
+    #formAncho{width: 60%;}
+    #cajaFormMargen{padding-left: 4%; margin-bottom: 4%;}
+    #enviarMargen{margin-bottom: 0%;}
+}
