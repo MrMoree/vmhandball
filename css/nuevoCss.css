@@ -284,7 +284,8 @@
   gap: 10px 10px;
   justify-content: center;
   overflow: hidden;
-  grid-template-areas: "img1 img1 img2 img5" "img1 img1 img4 img3"; }
+  grid-template-areas: "img1 img1 img2 img5"
+ "img1 img1 img4 img3"; }
   #galeriaPrimera div:hover {
     transform: scale(1.3); }
 
@@ -325,37 +326,38 @@
   gap: 10px 10px;
   justify-content: center;
   overflow: hidden;
-  grid-template-areas: "imgC imgD imgA imgA" "imgB imgE imgA imgA"; }
+  grid-template-areas: "imgC imgD imgA imgA"
+ "imgB imgE imgA imgA"; }
   #galeriaInferiores div:hover {
     transform: scale(1.3); }
 
 #imgA {
   grid-area: imgA;
-  background-image: url(../media/Inferiores_A.JPG);
+  background-image: url(../media/Inferiores_A.jpg);
   background-position: center;
   background-size: cover; }
 
 #imgB {
   grid-area: imgB;
-  background-image: url(../media/Inferiores_B.JPG);
+  background-image: url(../media/Inferiores_B.jpg);
   background-position: center;
   background-size: cover; }
 
 #imgC {
   grid-area: imgC;
-  background-image: url(../media/Inferiores_C.JPG);
+  background-image: url(../media/Inferiores_C.jpg);
   background-position: center;
   background-size: cover; }
 
 #imgD {
   grid-area: imgD;
-  background-image: url(../media/Inferiores_D.JPG);
+  background-image: url(../media/Inferiores_D.jpg);
   background-position: center;
   background-size: cover; }
 
 #imgE {
   grid-area: imgE;
-  background-image: url(../media/Inferiores_E.JPG);
+  background-image: url(../media/Inferiores_E.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -367,13 +369,21 @@
     margin-top: 5%;
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; }
+    grid-template-areas: "img1"
+ "img2"
+ "img3"
+ "img4"
+ "img5"; }
   #galeriaInferiores {
     margin-bottom: 10%;
     margin-top: 5%;
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(5, 300px);
-    grid-template-areas: "imgA" "imgB" "imgC" "imgD" "imgE"; } }
+    grid-template-areas: "imgA"
+ "imgB"
+ "imgC"
+ "imgD"
+ "imgE"; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1250px) {
   #galerias h1 {
@@ -383,13 +393,17 @@
     margin-top: 3%;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 300px);
-    grid-template-areas: "img1 img1" "img2 img3" "img4 img5"; }
+    grid-template-areas: "img1 img1"
+ "img2 img3"
+ "img4 img5"; }
   #galeriaInferiores {
     margin-bottom: 10%;
     margin-top: 3%;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 300px);
-    grid-template-areas: "imgA imgA" "imgB imgC" "imgD imgE"; } }
+    grid-template-areas: "imgA imgA"
+ "imgB imgC"
+ "imgD imgE"; } }
 
 /* ====================== SPONSORS ====================== */
 #sponsors {
@@ -400,7 +414,9 @@
   justify-content: center;
   margin: 5% 0% 5% 0%;
   overflow: hidden;
-  grid-template-areas: "presentacion presentacion presentacion presentacion" "sponsor1 sponsor1 sponsor2 sponsor3" "sponsor1 sponsor1 sponsor4 sponsor5"; }
+  grid-template-areas: "presentacion presentacion presentacion presentacion"
+ "sponsor1 sponsor1 sponsor2 sponsor3"
+ "sponsor1 sponsor1 sponsor4 sponsor5"; }
 
 #presentacion {
   grid-area: presentacion;
@@ -447,7 +463,12 @@
     margin-bottom: 15%;
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(6, 100px);
-    grid-template-areas: "presentacion presentacion" "presentacion presentacion" "presentacion presentacion" "sponsor1 sponsor1" "sponsor2 sponsor3" "sponsor4 sponsor5"; }
+    grid-template-areas: "presentacion presentacion"
+ "presentacion presentacion"
+ "presentacion presentacion"
+ "sponsor1 sponsor1"
+ "sponsor2 sponsor3"
+ "sponsor4 sponsor5"; }
   #presentacion h2 {
     margin-bottom: 4%; } }
 
@@ -457,7 +478,10 @@
     margin-bottom: 5%;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(4, 100px);
-    grid-template-areas: "presentacion presentacion presentacion" "presentacion presentacion presentacion" "sponsor1 sponsor1 sponsor2" "sponsor3 sponsor4 sponsor5"; }
+    grid-template-areas: "presentacion presentacion presentacion"
+ "presentacion presentacion presentacion"
+ "sponsor1 sponsor1 sponsor2"
+ "sponsor3 sponsor4 sponsor5"; }
   #presentacion p {
     margin-bottom: 4%; } }
 
